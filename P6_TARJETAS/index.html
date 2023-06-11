@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>P6_GALLERY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!--ESTILOS-->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    :root {
+      --color-primary: #6F7466;
+      --color-text: #FBFAF3;
+    }
+
+    .card_txt {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: baseline;
+      font-family: 'Merriweather', serif;
+    }
+
+    .card_txt h1 {
+      padding: 0 0 0em 0;
+      font-size: xx-large;
+      flex-grow: 1;
+      color: var(--color-primary);
+      letter-spacing: 0em;
+      font-variant: normal;
+      line-height: 50px;
+    }
+
+    .card_txt h2 {
+      padding: 0 0 0.3em 0;
+      justify-content: right;
+      font-size: large;
+      flex-grow: 0;
+      font-style: italic;
+      color: var(--color-primary);
+      word-spacing: 0em;
+      font-weight: 70;
+      line-height: 50px;
+    }
+
+    .card_txt p {
+      padding: 0em 0 0 0;
+      font-size: medium;
+      font-weight: 100;
+      color: var(--color-primary);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3em;
+      background-color: var(--color-primary);
+      padding: 3em;
+    }
+
+    .card {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 26%;
+      flex-direction: column;
+      border: solid 0.3em var(--color-secundary);
+      background-color: var(--color-text);
+      padding: 1em;
+    }
+
+    .card_img {
+      object-position: top;
+      width: auto;
+      height: 500px;
+    }
+
+    .card_img img {
+      object-fit: cover;
+      height: 100%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <main>
+    <div class="gallery">
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/horse-attacked-by-a-lion GEORGE STUBBS.jpg" alt="Caballo atacado por un león">
+        </figure>
+        <header class="card_txt">
+          <h1>Horse attacked by a lion</h1>
+          <h2>George Stubbs</h2>
+          <p>"Horse Attacked by a Lion" de George Stubbs es una pintura impactante que representa el violento encuentro entre un caballo y un león, capturando la tensión y la ferocidad de ese momento.</p>
+        </header>
+      </div>
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/hound-coursing-a-stag-GEORGE STUBBS.jpg" alt="Persecución a un ciervo">
+        </figure>
+        <header class="card_txt">
+          <h1>Hound coursing a stag</h1>
+          <h2>George Stubbs</h2>
+          <p>"Hound Coursing a Stag" de George Stubbs es una pintura dinámica que muestra la persecución frenética de un ciervo por parte de un grupo de perros de caza. En esta obra, Stubbs logra transmitir el movimiento y la emoción de la escena, capturando la energía y la intensidad del momento con su estilo realista y detallado.</p>
+        </header>
+      </div>
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/harvest.jpg" alt="Cosecha">
+        </figure>
+        <header class="card_txt">
+          <h1>Harvest</h1>
+          <h2>George Stubbs</h2>
+          <p>"Harvest" de George Stubbs es una obra que retrata la escena de una cosecha en pleno apogeo. En esta pintura, Stubbs captura la vitalidad y el trabajo duro de los agricultores mientras recolectan los frutos de su labor. Con su estilo detallado y realista, el artista logra transmitir la sensación de movimiento y la abundancia de la cosecha. "Harvest" es un homenaje a la vida rural y a la importancia del trabajo agrícola en la sociedad.</p>
+        </header>
+      </div>
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/two-shafto-mares-and-a-foal-1774.jpg" alt="Dos yeguas y un potrillo">
+        </figure>
+        <header class="card_txt">
+          <h1>Two shafto mares and a foal</h1>
+          <h2>George Stubbs</h2>
+          <p>"Two Shafto Mares and a Foal" de George Stubbs es una pintura encantadora que retrata a dos yeguas Shafto y su potro. En esta obra, Stubbs captura la gracia y la belleza de estos animales en un entorno natural. Con su estilo realista y detallado, el artista logra transmitir la conexión maternal entre las yeguas y la ternura del potro. "Two Shafto Mares and a Foal" es una representación conmovedora de la vida y la armonía en el reino animal.</p>
+        </header>
+      </div>
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/horse-devoured-by-a-lion.jpg" alt="Caballo siendo devorado por un león">
+        </figure>
+        <header class="card_txt">
+          <h1>Horse devoured by a lion</h1>
+          <h2>George Stubbs</h2>
+          <p>"Horse Devoured By a Lion" representa una escena violenta y brutal donde un león devora a un caballo.</p>
+        </header>
+      </div>
+      <div class="card">
+        <figure class="card_img">
+          <img src="img/a-bay-hunter-with-two-spaniels.jpg" alt="0">
+        </figure>
+        <header class="card_txt">
+          <h1>A bay hunter with two spaniels</h1>
+          <h2>George Stubbs</h2>
+          <p>"A Bay Hunter with Two Spaniels" es una pintura de George Stubbs que muestra a un cazador con un caballo bayo y dos perros de caza.</p>
+        </header>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
